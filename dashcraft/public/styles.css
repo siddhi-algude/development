@@ -1,0 +1,137 @@
+/* ---------- Base / Reset ---------- */
+* { box-sizing: border-box; }
+:root{
+  --bg:#0d1117; --surface:#111624; --panel:#151b2c; --ring:#253049; --muted:#91a0b6; --text:#e6edf3; --acc:#7cc7ff;
+  --radius:12px; --gap:16px; --mincol:320px; --maxw:1380px;
+
+  /* background system (updated by JS) */
+  --bg-image: url("/assets/bg/default.jpg");
+  --bg-opacity: 0.35;
+}
+
+html,body { height: 100%; }
+body{
+  margin:0; font:14px/1.5 Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  color:var(--text);
+  background: var(--bg);
+} 
+
+/* Full-page changing background (faded) */
+body::before{
+  content:""; position:fixed; inset:0; z-index:-1;
+  background-image: var(--bg-image);
+  background-size: cover; background-position: center;
+  filter: saturate(1.1) contrast(1.05) blur(2px);
+  opacity: var(--bg-opacity);
+  transition: background-image .4s ease, opacity .15s ease;
+}
+
+/* ---------- Top bar ---------- */
+.topbar{
+  position:sticky; top:0; z-index:10;
+  display:grid; grid-template-columns: 1fr auto auto; align-items:center;
+  gap:16px;
+  padding:14px 20px; border-bottom:1px solid var(--ring);
+  backdrop-filter: blur(8px);
+  background: color-mix(in oklab, var(--bg) 75%, transparent);
+}
+.brand{ display:flex; align-items:center; gap:10px; min-width:160px; }
+.brand .logo{ width:28px; height:28px; border-radius:6px; }
+.brand h1{ margin:0; font-size:22px; letter-spacing:.2px; }
+
+.tabs{ display:flex; gap:8px; flex-wrap:wrap; justify-content:center; }
+.tab{
+  padding:8px 12px; border:1px solid var(--ring); border-radius:999px;
+  color:var(--text); text-decoration:none;
+  background:#141a2b;
+}
+.tab:hover{ border-color:#35507d; }
+.tab.is-active{ background:#1f2843; border-color:#4a6aa5; }
+
+/* Right action buttons */
+.actions{ display:flex; gap:10px; justify-self:end; }
+
+/* Buttons */
+.btn{
+  padding:8px 12px; border:1px solid var(--ring); border-radius:10px; cursor:pointer;
+  background:#1a2134; color:var(--text);
+}
+.btn:hover{ border-color:#35507d; }
+.btn-ghost{ background:transparent; }
+.btn-danger{ background:#ff6b6b; border-color:#ff6b6b; color:#1b1010; }
+.btn-danger:hover{ filter:brightness(1.05); }
+
+/* ---------- Layout container ---------- */
+.container{ max-width:var(--maxw); margin:0 auto; padding:18px; }
+
+/* ---------- Grid / Widgets ---------- */
+.grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--mincol), 1fr));
+  gap: var(--gap);
+}
+
+.widget{
+  background: color-mix(in oklab, var(--panel) 92%, black);
+  border:1px solid var(--ring);
+  border-radius: var(--radius);
+  box-shadow: 0 18px 40px rgba(0,0,0,.25);
+  display:flex; flex-direction:column; overflow:hidden;
+}
+.widget.selected{ outline:2px solid var(--acc); outline-offset:-2px; }
+
+.w-head{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:10px 12px; border-bottom:1px solid var(--ring);
+}
+.w-title{ font-weight:700; letter-spacing:.2px; }
+.w-actions{ display:flex; gap:8px; }
+
+.w-body{ padding:12px; }
+.w-foot{ padding:10px 12px; border-top:1px solid var(--ring); color:var(--muted); }
+
+input, select, textarea{
+  font:inherit; color:var(--text);
+  background:#0f1424; border:1px solid var(--ring); border-radius:10px; padding:8px 10px;
+}
+textarea{ width:100%; min-height:140px; resize:vertical; }
+
+/* density presets for grid.js */
+.density-compact .widget { min-height: 120px; }
+.density-comfortable .widget { min-height: 160px; }
+.density-spacious .widget { min-height: 200px; }
+
+/* Snap (optional) */
+.grid.grid-snap { scroll-snap-type: y proximity; }
+.grid.grid-snap .widget { scroll-snap-align: start; }
+
+/* Toast */
+.toast{
+  position:fixed; bottom:16px; left:16px; z-index:20;
+  background:#1b2236; border:1px solid var(--ring); color:var(--text);
+  padding:8px 12px; border-radius:10px;
+}
+
+/* Add-dialog horizontal layout */
+dialog .chooser { min-width: min(680px, 96vw); }
+dialog .chooser h3 { margin: 0 0 10px 0; }
+dialog .chooser .row {
+  display: flex; gap: 12px; align-items: center; margin-bottom: 10px;
+}
+dialog .chooser .opt {
+  display: flex; align-items: center; gap: 8px;
+  background: #101628; border: 1px solid #2b3242; border-radius: 10px;
+  padding: 8px 10px;
+}
+dialog .chooser .ico { font-size: 18px; }
+dialog .chooser select,
+dialog .chooser input {
+  background: transparent; border: none; color: var(--text);
+  outline: none; padding: 6px 4px; min-width: 220px;
+}
+dialog menu { display: flex; gap: 8px; justify-content: flex-end; }
+dialog menu button {
+  background:#1f2430; color:var(--text); border:1px solid var(--ring);
+  padding:6px 10px; border-radius:8px; cursor:pointer;
+}
+

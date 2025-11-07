@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>DashCraft</title>
+
+  <link rel="manifest" href="./manifest.webmanifest"/> 
+  <link rel="icon" href="/assets/icons/icon-192.png" />
+  <link rel="stylesheet" href="./styles.css?v=4" />
+  <script type="module" src="./src/main.js?v=4"></script>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style> body{ font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial; } </style>
+</head>
+<body> 
+  <header class="topbar">
+    <div class="brand">
+      <img class="logo" src="/assets/icons/icon-192.png" alt="" />
+      <h1>DashCraft</h1> 
+    </div>
+
+    <!-- Category Tabs (Crypto removed) -->
+    <nav class="tabs" aria-label="Widget categories">
+      <a href="#all" class="tab is-active" data-filter="all">All</a>
+      <a href="#weather" class="tab" data-filter="weather">Weather</a>
+      <a href="#pomodoro" class="tab" data-filter="pomodoro">Pomodoro</a>
+      <a href="#rss" class="tab" data-filter="rss">RSS</a>
+      <a href="#notes" class="tab" data-filter="notes">Notes</a>
+    </nav>
+
+    <nav class="actions">
+      <button id="add-widget" class="btn">Add Widget</button>
+      <button id="save-layout" class="btn">Save</button>
+      <button id="install" class="btn btn-ghost">Install</button>
+    </nav>
+  </header>
+
+  <div class="container">
+    <main id="grid" class="grid" aria-live="polite" aria-label="Widget grid"></main>
+  </div>
+
+  <template id="widget-frame">
+    <section class="widget" draggable="true">
+      <header class="w-head">
+        <span class="w-title"></span>
+        <div class="w-actions">
+          <button data-act="refresh" class="btn btn-ghost" title="Refresh">↻</button>
+          <button data-act="copy" class="btn btn-ghost" title="Copy">📋</button>
+          <button data-act="remove" class="btn btn-danger" title="Remove">✖</button>
+        </div>
+      </header>
+      <div class="w-body"></div>
+      <footer class="w-foot"></footer>
+    </section>
+  </template>
+
+  <!-- <dialog id="add-dialog">
+    <form method="dialog">
+      <h3 style="margin:0 0 10px 0;">Add widget</h3>
+      <select id="widget-kind" required>
+        <option value="notes">Notes</option>
+        <option value="weather">Weather</option>
+        <option value="pomodoro">Pomodoro</option>
+        <option value="rss">RSS Reader</option>
+      </select>
+      <menu>
+        <button value="cancel" class="btn btn-ghost">Cancel</button>
+        <button id="add-confirm" value="default" class="btn">Add</button>
+      </menu>
+    </form>
+  </dialog> -->
+  <!-- OLD:
+<dialog id="choose-kind"> ... </dialog>
+-->
+
+<!-- NEW: horizontal chooser with icons + label input -->
+<dialog id="choose-kind">
+  <form method="dialog" id="choose-form" class="chooser">
+    <h3>Add widget</h3>
+    <div class="row">
+      <label class="opt">
+        <span class="ico">📝</span>
+        <select id="choose-select" required>
+          <option value="notes">Notes</option>
+          <option value="weather">Weather</option>
+          <option value="pomodoro">Pomodoro</option>
+          <option value="rss">RSS</option>
+          <option value="crypto">Crypto</option>
+        </select>
+      </label>
+
+      <label class="opt">
+        <span class="ico">🏷️</span>
+        <input id="choose-label" placeholder="Label (optional)" maxlength="40"/>
+      </label>
+    </div>
+
+    <menu>
+      <button value="cancel">Cancel</button>
+      <button value="default" id="choose-add">Add</button>
+    </menu>
+  </form>
+</dialog>
+
+  <script type="module" src="./src/main.js"></script> 
+</body>
+</html>
