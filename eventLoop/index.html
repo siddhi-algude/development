@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- <button id="btn">Click</button>
+<script>
+  document.getElementById("btn").addEventListener("click", () => {
+    console.log("Handler start");
+    setTimeout(() => console.log("Timeout inside event"), 0);
+    Promise.resolve().then(() => console.log("Promise inside event"));
+    console.log("Handler end");
+  });
+  console.log("Outside");
+</script> -->
+
+
+<button id="buy">Buy Now</button>
+<script>
+  document.getElementById("buy").addEventListener("click", async () => {
+    console.log("Click start");
+    setTimeout(() => console.log("Show spinner"), 0);
+    await Promise.resolve();
+    console.log("Order confirmed");
+  });
+  console.log("Outside");
+</script>
+    <!-- <script src="practice1.js"></script> -->
+</body>
+</html>
