@@ -1,0 +1,105 @@
+// [
+//   { "id": 1, "title": "Men's Cotton T-Shirt", "price": 19.99, "description": "Soft cotton tee", "image": "https://img.faballey.com/images/Product/XKS00306Z/d3.jpg", "category": "Fashion" },
+//   { "id": 2, "title": "Women's Sneakers", "price": 59.0, "description": "Lightweight everyday sneakers", "image": "https://assets-jiocdn.ajio.com/medias/sys_master/root/20220316/TDUp/6231fc79f997dd03e218fa12/-1117Wx1400H-469118924-purple-MODEL.jpg", "category": "Fashion" },
+//   { "id": 3, "title": "Unisex Hoodie", "price": 39.5, "description": "Comfy fleece hoodie", "image": "https://assets-jiocdn.ajio.com/medias/sys_master/root/20220316/TDUp/6231fc79f997dd03e218fa12/-1117Wx1400H-469118924-purple-MODEL.jpg", "category": "Fashion" },
+
+//   { "id": 4, "title": "Smartphone 6.5\"", "price": 499.0, "description": "Great camera, long battery", "image": "https://assets-jiocdn.ajio.com/medias/sys_master/root/20220316/TDUp/6231fc79f997dd03e218fa12/-1117Wx1400H-469118924-purple-MODEL.jpg", "category": "Electronics" },
+//   { "id": 5, "title": "Wireless Headphones", "price": 89.0, "description": "Crisp sound", "image": "https://assets-jiocdn.ajio.com/medias/sys_master/root/20220316/TDUp/6231fc79f997dd03e218fa12/-1117Wx1400H-469118924-purple-MODEL.jpg", "category": "Electronics" },
+//   { "id": 6, "title": "Smartwatch", "price": 129.0, "description": "Fitness + notifications", "image": "https://assets-jiocdn.ajio.com/medias/sys_master/root/20220316/TDUp/6231fc79f997dd03e218fa12/-1117Wx1400H-469118924-purple-MODEL.jpg", "category": "Electronics" },
+
+//   { "id": 7, "title": "Office Chair", "price": 149.0, "description": "Ergonomic support", "image": "https://picsum.photos/seed/chair/600/600", "category": "Home & Furniture" },
+//   { "id": 8, "title": "Shoe Rack", "price": 39.99, "description": "Space-saving rack", "image": "https://picsum.photos/seed/shoerack/600/600", "category": "Home & Furniture" },
+//   { "id": 9, "title": "Table Lamp", "price": 24.99, "description": "Warm ambient lighting", "image": "https://picsum.photos/seed/lamp/600/600", "category": "Home & Furniture" }
+// ]
+[
+  {
+    "id": 1,
+    "title": "Women's Festive Kurti",
+    "price": 29.99,
+    "description": "Embroidered straight kurti, perfect for festive occasions.",
+    "image": "https://images.pexels.com/photos/6311652/pexels-photo-6311652.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "category": "Fashion",
+    "rating": 4.5,
+    "ratingCount": 210
+  },
+  {
+    "id": 2,
+    "title": "Running Sneakers",
+    "price": 59.0,
+    "description": "Lightweight everyday sneakers with breathable mesh.",
+    "image": "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "category": "Fashion",
+    "rating": 4.2,
+    "ratingCount": 145
+  },
+  {
+    "id": 3,
+    "title": "Wireless Over-Ear Headphones",
+    "price": 89.0,
+    "description": "Noise-isolating wireless headphones with deep bass.",
+    "image": "https://images.pexels.com/photos/3394664/pexels-photo-3394664.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "category": "Electronics",
+    "rating": 4.7,
+    "ratingCount": 320
+  },
+  {
+    "id": 4,
+    "title": "Smartphone 6.5\" AMOLED",
+    "price": 499.0,
+    "description": "AMOLED display, great camera, all-day battery life.",
+    "image": "https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "category": "Electronics",
+    "rating": 4.4,
+    "ratingCount": 540
+  },
+  {
+    "id": 5,
+    "title": "Gaming Laptop 15\"",
+    "price": 1099.0,
+    "description": "Powerful GPU and cooling for AAA titles.",
+    "image": "https://images.pexels.com/photos/845434/pexels-photo-845434.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "category": "Electronics",
+    "rating": 4.6,
+    "ratingCount": 190
+  },
+  {
+    "id": 6,
+    "title": "Bluetooth Speaker",
+    "price": 49.0,
+    "description": "Portable speaker with rich sound and long battery life.",
+    "image": "https://images.pexels.com/photos/164745/pexels-photo-164745.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "category": "Electronics",
+    "rating": 4.3,
+    "ratingCount": 260
+  },
+  {
+    "id": 7,
+    "title": "Office Chair with Lumbar Support",
+    "price": 149.0,
+    "description": "Ergonomic chair with breathable mesh back.",
+    "image": "https://images.pexels.com/photos/813691/pexels-photo-813691.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "category": "Home & Furniture",
+    "rating": 4.1,
+    "ratingCount": 80
+  },
+  {
+    "id": 8,
+    "title": "Shoe Rack 5 Tier",
+    "price": 39.99,
+    "description": "Space-saving metal shoe rack for up to 20 pairs.",
+    "image": "https://images.pexels.com/photos/5710142/pexels-photo-5710142.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "category": "Home & Furniture",
+    "rating": 4.0,
+    "ratingCount": 65
+  },
+  {
+    "id": 9,
+    "title": "Bedside Table Lamp",
+    "price": 24.99,
+    "description": "Warm ambient lighting with fabric shade.",
+    "image": "https://images.pexels.com/photos/112474/pexels-photo-112474.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "category": "Home & Furniture",
+    "rating": 4.5,
+    "ratingCount": 110
+  }
+]

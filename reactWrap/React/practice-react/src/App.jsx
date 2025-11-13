@@ -484,54 +484,90 @@
 
 
 //// 8 useCallback -- returns memoized function 
-// syntax const memoizedFn = useCallback(() => { /* ... */ }, [deps]);
-import React, { useState, useCallback, memo } from "react";
+// // syntax const memoizedFn = useCallback(() => { /* ... */ }, [deps]);
+// import React, { useState, useCallback, memo } from "react";
 
- function App() {
-  const [count, setCount] = useState(0);
-  const [dark, setDark] = useState(false);
+//  function App() {
+//   const [count, setCount] = useState(0);
+//   const [dark, setDark] = useState(false);
 
-  //  if we use inline fn, it changes every render
-  // useCallback → stable function reference
-  const increment = useCallback(() => {
-    setCount((c) => c + 1);
-  }, []); // no deps - never changes so same function reference is returned
+//   //  if we use inline fn, it changes every render
+//   // useCallback → stable function reference
+//   const increment = useCallback(() => {
+//     setCount((c) => c + 1);
+//   }, []); // no deps - never changes so same function reference is returned
 
-  const themeStyle = {
-    backgroundColor: dark ? "#222" : "#eee",
-    color: dark ? "#eee" : "#222",
-    padding: 20,
-    borderRadius: 8,
-    marginTop: 16,
-    transition: "0.3s",
-  };
+//   const themeStyle = {
+//     backgroundColor: dark ? "#222" : "#eee",
+//     color: dark ? "#eee" : "#222",
+//     padding: 20,
+//     borderRadius: 8,
+//     marginTop: 16,
+//     transition: "0.3s",
+//   };
 
+//   return (
+//     <div style={{ fontFamily: "system-ui", padding: 16 }}>
+//       <h2>useCallback demo — stable functions for memoized children</h2>
+//       <button onClick={() => setDark((d) => !d)}>Toggle Theme</button>
+//       <div style={themeStyle}>
+//         <p>Count: {count}</p>
+//         {/* pass function as prop */}
+//         <ChildButton onIncrement={increment} />
+//       </div>
+//     </div>
+//   );
+// }
+
+// // memoized child
+// const ChildButton = memo(function ChildButton({ onIncrement }) {
+//   console.log("child btn rendered");
+//   return (
+//     <button onClick={onIncrement} style={{ marginTop: 8 }}>
+//       Increment from child
+//     </button>
+//   );
+// });
+
+
+// //// 9 custom hooks -- own hooks reusable components 
+
+
+
+// export default App;
+
+// import React from 'react'
+// import Welcome from './components/Welcome'
+
+// function App() {
+//   return (
+//     <>
+//       <div>App</div>
+//       <Welcome name="sid"/>
+//       <h3>Heading from demo app</h3>
+//     </>
+//   )
+// }
+
+import React from 'react';
+import UserList from './components/UserList';
+import SearchTodos from './components/Todo';
+
+function App() {
   return (
-    <div style={{ fontFamily: "system-ui", padding: 16 }}>
-      <h2>useCallback demo — stable functions for memoized children</h2>
-      <button onClick={() => setDark((d) => !d)}>Toggle Theme</button>
-      <div style={themeStyle}>
-        <p>Count: {count}</p>
-        {/* pass function as prop */}
-        <ChildButton onIncrement={increment} />
+    <div className="App">
+      <h2>Higher Order Component</h2>
+      <div className="section">
+        <UserList />
+      </div>
+      <div>
+        
       </div>
     </div>
   );
 }
 
-// memoized child
-const ChildButton = memo(function ChildButton({ onIncrement }) {
-  console.log("child btn rendered");
-  return (
-    <button onClick={onIncrement} style={{ marginTop: 8 }}>
-      Increment from child
-    </button>
-  );
-});
-
-
-//// 9 custom hooks -- own hooks reusable components 
-
-
-
 export default App;
+
+
+ 
