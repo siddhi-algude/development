@@ -1,16 +1,4 @@
-// [
-//   { "id": 1, "title": "Men's Cotton T-Shirt", "price": 19.99, "description": "Soft cotton tee", "image": "https://img.faballey.com/images/Product/XKS00306Z/d3.jpg", "category": "Fashion" },
-//   { "id": 2, "title": "Women's Sneakers", "price": 59.0, "description": "Lightweight everyday sneakers", "image": "https://assets-jiocdn.ajio.com/medias/sys_master/root/20220316/TDUp/6231fc79f997dd03e218fa12/-1117Wx1400H-469118924-purple-MODEL.jpg", "category": "Fashion" },
-//   { "id": 3, "title": "Unisex Hoodie", "price": 39.5, "description": "Comfy fleece hoodie", "image": "https://assets-jiocdn.ajio.com/medias/sys_master/root/20220316/TDUp/6231fc79f997dd03e218fa12/-1117Wx1400H-469118924-purple-MODEL.jpg", "category": "Fashion" },
-
-//   { "id": 4, "title": "Smartphone 6.5\"", "price": 499.0, "description": "Great camera, long battery", "image": "https://assets-jiocdn.ajio.com/medias/sys_master/root/20220316/TDUp/6231fc79f997dd03e218fa12/-1117Wx1400H-469118924-purple-MODEL.jpg", "category": "Electronics" },
-//   { "id": 5, "title": "Wireless Headphones", "price": 89.0, "description": "Crisp sound", "image": "https://assets-jiocdn.ajio.com/medias/sys_master/root/20220316/TDUp/6231fc79f997dd03e218fa12/-1117Wx1400H-469118924-purple-MODEL.jpg", "category": "Electronics" },
-//   { "id": 6, "title": "Smartwatch", "price": 129.0, "description": "Fitness + notifications", "image": "https://assets-jiocdn.ajio.com/medias/sys_master/root/20220316/TDUp/6231fc79f997dd03e218fa12/-1117Wx1400H-469118924-purple-MODEL.jpg", "category": "Electronics" },
-
-//   { "id": 7, "title": "Office Chair", "price": 149.0, "description": "Ergonomic support", "image": "https://picsum.photos/seed/chair/600/600", "category": "Home & Furniture" },
-//   { "id": 8, "title": "Shoe Rack", "price": 39.99, "description": "Space-saving rack", "image": "https://picsum.photos/seed/shoerack/600/600", "category": "Home & Furniture" },
-//   { "id": 9, "title": "Table Lamp", "price": 24.99, "description": "Warm ambient lighting", "image": "https://picsum.photos/seed/lamp/600/600", "category": "Home & Furniture" }
-// ]
+ 
 [
   {
     "id": 1,

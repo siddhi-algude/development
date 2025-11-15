@@ -6,7 +6,8 @@
 // }
 
 import { forwardRef } from "react";
-import { cn } from "../utils/cn";
+import cn from "../utils/cn";
+
 
 const Button = forwardRef(
   ({ as: Comp = "button", variant = "primary", className, ...props }, ref) => {
