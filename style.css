@@ -1,0 +1,27 @@
+body{
+    color:blueviolet
+}
+.title{
+    font-size:medium
+}
+.subtitle{
+    font-size:4rem
+}
+ 
+@media all and (max-width: 500px){
+    body{
+        color:aqua
+    }
+}
+
+@media all and (orientation: landscape) and (max-width: 600px){
+    .subtitle{
+        color:rgb(85, 128, 0)
+    }
+}
+
+@media all and (orientation: portrait) or (height: 300px){
+    .title{
+        color:rgb(255, 0, 212)
+    }
+}

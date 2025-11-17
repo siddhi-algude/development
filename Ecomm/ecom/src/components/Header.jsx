@@ -1,76 +1,250 @@
-// // import { Link, NavLink } from "react-router-dom";
+ 
+// // // import { Link, NavLink } from "react-router-dom";
+// // // import { useCart } from "../context/CartContext";
+// // // import { useWishlist } from "../context/WishlistContext";
+// // // import { useSearch } from "../context/SearchContext";
+
+
+// // // export default function Header() {
+// // //   const { totalCount } = useCart();
+// // //   const { wishlist } = useWishlist();
+// // //   const { searchQuery, setSearchQuery } = useSearch();
+
+// // //   const linkClass = ({ isActive }) =>
+// // //     isActive
+// // //       ? "text-gray-900 font-semibold"
+// // //       : "text-gray-700 hover:text-gray-900";
+
+// // //   return (
+// // //     <header className="border-b border-gray-200 bg-white">
+// // //       <div className="container-max flex items-center gap-6 h-16">
+// // //         {/* Brand */}
+// // //         <Link to="/" className="flex items-center gap-1">
+// // //           <span className="text-2xl font-extrabold text-fuchsia-600">
+// // //             Swift
+// // //           </span>
+// // //           <span className="text-2xl font-extrabold text-yellow-400">
+// // //             Kart
+// // //           </span>
+// // //         </Link>
+
+// // //         {/* Search bar */}
+// // //         <div className="flex-1 hidden md:block">
+// // //           <div className="flex items-center gap-2 bg-gray-100 rounded-full px-4 py-2">
+// // //             <span className="text-gray-400 text-sm">🔍</span>
+// // //             <input
+// // //               className="bg-transparent flex-1 outline-none text-sm"
+// // //               placeholder="Search for products, brands and more"
+// // //             />
+// // //           </div>
+// // //         </div>
+
+// // //         {/* Right nav */}
+// // //         <nav className="flex items-center gap-4 text-sm">
+// // //           <button className="btn-ghost rounded-full text-sm px-3 py-1.5">
+// // //             Login
+// // //           </button>
+
+// // //           <NavLink to="/cart" className={linkClass}>
+// // //             <div className="relative flex items-center gap-1">
+// // //               <span>🛒</span>
+// // //               <span>Cart</span>
+// // //               {totalCount > 0 && (
+// // //                 <span className="absolute -top-2 -right-3 bg-fuchsia-500 text-white text-[10px] font-semibold rounded-full px-1.5 py-0.5 shadow-sm">
+// // //                   {totalCount}
+// // //                 </span>
+// // //               )}
+// // //             </div>
+// // //           </NavLink>
+
+// // //           <NavLink to="/contact" className={linkClass}>
+// // //             Contact&nbsp;Us
+// // //           </NavLink>
+// // //           <NavLink to="/wishlist" className={linkClass}>
+// // //             <div className="relative flex items-center gap-1">
+// // //               <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-fuchsia-500 text-white text-xs">
+// // //               ♥</span>
+
+// // //               <span>Wishlist</span>
+
+// // //               {wishlist.length > 0 && (
+// // //                 <span className="absolute -top-2 -right-3 bg-fuchsia-500 text-white text-[10px] font-semibold rounded-full px-1.5 py-0.5 shadow-sm">
+// // //                   {wishlist.length}
+// // //                 </span>
+// // //               )}
+// // //             </div>
+// // //           </NavLink>
+
+// // //         </nav>
+// // //       </div>
+// // //     </header>
+// // //   );
+// // // }
+// // import { Link, NavLink, useNavigate, useLocation } from "react-router-dom";
 // // import { useCart } from "../context/CartContext";
+// // import { useWishlist } from "../context/WishlistContext";
+// // import { useSearch } from "../context/SearchContext";
 
 // // export default function Header() {
 // //   const { totalCount } = useCart();
-// //   const active = ({ isActive }) => (isActive ? "text-black font-semibold" : "text-gray-600 hover:text-black");
+// //   const { wishlist } = useWishlist();
+// //   const { searchQuery, setSearchQuery } = useSearch();
+// //   const navigate = useNavigate();
+// //   const location = useLocation();
+
+// //   const linkClass = ({ isActive }) =>
+// //     isActive
+// //       ? "text-gray-900 font-semibold"
+// //       : "text-gray-700 hover:text-gray-900";
+
+// //   const handleSearchChange = (e) => {
+// //     const value = e.target.value;
+// //     setSearchQuery(value);
+
+// //     // As soon as user types something, go to /search
+// //     if (value.trim() && location.pathname !== "/search") {
+// //       navigate("/search");
+// //     }
+// //     // If they clear, we just stay wherever we are; /search will show all products.
+// //   };
 
 // //   return (
-// //     <header className="border-b bg-white">
-// //       <div className="container-max flex items-center justify-between h-16">
-// //         <Link to="/" className="text-xl font-bold">ShopLite</Link>
-// //         <nav className="flex items-center gap-6">
-// //           <NavLink to="/" className={active} end>Home</NavLink>
-// //           <NavLink to="/cart" className={active}>
-// //             Cart {totalCount > 0 && <span className="ml-2 badge">{totalCount}</span>}
+// //     <header className="border-b border-gray-200 bg-white">
+// //       <div className="container-max flex items-center gap-6 h-16">
+// //         {/* Brand */}
+// //         <Link to="/" className="flex items-center gap-1">
+// //           <span className="text-2xl font-extrabold text-fuchsia-600">
+// //             Swift
+// //           </span>
+// //           <span className="text-2xl font-extrabold text-yellow-400">
+// //             Kart
+// //           </span>
+// //         </Link>
+
+// //         {/* Search bar */}
+// //         <div className="flex-1 hidden md:block">
+// //           <div className="flex items-center gap-2 bg-gray-100 rounded-full px-4 py-2">
+// //             <span className="text-gray-400 text-sm">🔍</span>
+// //             <input
+// //               className="bg-transparent flex-1 outline-none text-sm"
+// //               placeholder="Search for products, brands and more"
+// //               value={searchQuery}
+// //               onChange={handleSearchChange}
+// //             />
+// //           </div>
+// //         </div>
+
+// //         {/* Right nav */}
+// //         <nav className="flex items-center gap-4 text-sm">
+// //           <button className="btn-ghost rounded-full text-sm px-3 py-1.5">
+// //             Login
+// //           </button>
+
+// //           <NavLink to="/cart" className={linkClass}>
+// //             <div className="relative flex items-center gap-1">
+// //               <span>🛒</span>
+// //               <span>Cart</span>
+// //               {totalCount > 0 && (
+// //                 <span className="absolute -top-2 -right-3 bg-fuchsia-500 text-white text-[10px] font-semibold rounded-full px-1.5 py-0.5 shadow-sm">
+// //                   {totalCount}
+// //                 </span>
+// //               )}
+// //             </div>
 // //           </NavLink>
-// //           <NavLink to="/contact" className={active}>Contact&nbsp;Us</NavLink>
+
+// //           <NavLink to="/contact" className={linkClass}>
+// //             Contact&nbsp;Us
+// //           </NavLink>
+
+// //           <NavLink to="/wishlist" className={linkClass}>
+// //             <div className="relative flex items-center gap-1">
+// //               <span className="text-fuchsia-500">💜</span>
+// //               <span>Wishlist</span>
+// //               {wishlist.length > 0 && (
+// //                 <span className="absolute -top-2 -right-4 bg-fuchsia-500 text-white text-[10px] font-semibold rounded-full px-1.5 py-0.5 shadow-sm">
+// //                   {wishlist.length}
+// //                 </span>
+// //               )}
+// //             </div>
+// //           </NavLink>
 // //         </nav>
 // //       </div>
 // //     </header>
 // //   );
 // // }
-
-
-// import { Link, NavLink } from "react-router-dom";
+// import { Link, NavLink, useNavigate } from "react-router-dom";
 // import { useCart } from "../context/CartContext";
+// import { useWishlist } from "../context/WishlistContext";
+// import { useSearch } from "../context/SearchContext";
 
 // export default function Header() {
 //   const { totalCount } = useCart();
+//   const { wishlist } = useWishlist();
+//   const { searchQuery, setSearchQuery } = useSearch();
+//   const navigate = useNavigate();
 
-//   const linkClass = ({ isActive }) =>
-//     isActive
-//       ? "text-gray-900 font-semibold"
-//       : "text-gray-700 hover:text-gray-900";
+//   // Update search text while typing
+//   const handleSearchChange = (e) => {
+//     setSearchQuery(e.target.value);
+//   };
+
+//   // Navigate ONLY on Enter
+//   const handleSearchSubmit = (e) => {
+//     if (e.key === "Enter") {
+//       navigate("/search");
+//     }
+//   };
 
 //   return (
 //     <header className="border-b border-gray-200 bg-white">
 //       <div className="container-max flex items-center gap-6 h-16">
+
 //         {/* Brand */}
 //         <Link to="/" className="flex items-center gap-1">
-//           <span className="text-2xl font-extrabold text-blue-600">Swift</span>
-//           <span className="text-2xl font-extrabold text-yellow-500">Kart</span>
+//           <span className="text-2xl font-extrabold text-fuchsia-600">Swift</span>
+//           <span className="text-2xl font-extrabold text-yellow-400">Kart</span>
 //         </Link>
 
-//         {/* Search */}
+//         {/* Search Bar */}
 //         <div className="flex-1 hidden md:block">
 //           <div className="flex items-center gap-2 bg-gray-100 rounded-full px-4 py-2">
 //             <span className="text-gray-400 text-sm">🔍</span>
 //             <input
 //               className="bg-transparent flex-1 outline-none text-sm"
 //               placeholder="Search for products, brands and more"
+//               value={searchQuery}
+//               onChange={handleSearchChange}
+//               onKeyDown={handleSearchSubmit}
 //             />
 //           </div>
 //         </div>
 
-//         {/* Right nav */}
+//         {/* Right navigation */}
 //         <nav className="flex items-center gap-4 text-sm">
-//           <button className="btn-ghost rounded-full text-sm px-3 py-1.5">
-//             Login
-//           </button>
+//           <button className="btn-ghost rounded-full text-sm px-3 py-1.5">Login</button>
 
-//           <NavLink to="/cart" className={linkClass}>
-//             <div className="flex items-center gap-1">
-//               <span>🛒</span>
-//               <span>Cart</span>
+//           {/* CART */}
+//           <NavLink to="/cart" className="text-gray-700 hover:text-gray-900">
+//             <div className="relative flex items-center gap-1">
+//               🛒 Cart
 //               {totalCount > 0 && (
-//                 <span className="badge ml-1">{totalCount}</span>
+//                 <span className="absolute -top-2 -right-3 bg-fuchsia-500 text-white text-[10px] px-1.5 py-0.5 rounded-full shadow-sm">
+//                   {totalCount}
+//                 </span>
 //               )}
 //             </div>
 //           </NavLink>
 
-//           <NavLink to="/contact" className={linkClass}>
-//             Contact&nbsp;Us
+//           {/* WISHLIST */}
+//           <NavLink to="/wishlist" className="text-gray-700 hover:text-gray-900">
+//             <div className="relative flex items-center gap-1">
+//               💜 Wishlist
+//               {wishlist.length > 0 && (
+//                 <span className="absolute -top-2 -right-4 bg-fuchsia-500 text-white text-[10px] px-1.5 py-0.5 rounded-full shadow-sm">
+//                   {wishlist.length}
+//                 </span>
+//               )}
+//             </div>
 //           </NavLink>
 //         </nav>
 //       </div>
@@ -78,16 +252,40 @@
 //   );
 // }
 
-import { Link, NavLink } from "react-router-dom";
+// src/components/Header.jsx
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useCart } from "../context/CartContext";
+import { useWishlist } from "../context/WishlistContext";
+import { useSearch } from "../context/SearchContext";
+import { useAuth } from "../context/AuthContext";
 
 export default function Header() {
   const { totalCount } = useCart();
+  const { wishlist } = useWishlist();
+  const { searchQuery, setSearchQuery } = useSearch();
+  const { user, logout } = useAuth();
+  const navigate = useNavigate();
 
-  const linkClass = ({ isActive }) =>
-    isActive
-      ? "text-gray-900 font-semibold"
-      : "text-gray-700 hover:text-gray-900";
+  const handleSearchChange = (e) => {
+    setSearchQuery(e.target.value);
+  };
+
+  const handleSearchSubmit = (e) => {
+    if (e.key === "Enter") navigate("/search");
+  };
+
+  const handleLoginClick = () => {
+    navigate("/login");
+  };
+
+  const handleSignupClick = () => {
+    navigate("/signup");
+  };
+
+  const handleLogout = () => {
+    logout();
+    navigate("/");
+  };
 
   return (
     <header className="border-b border-gray-200 bg-white">
@@ -109,30 +307,70 @@ export default function Header() {
             <input
               className="bg-transparent flex-1 outline-none text-sm"
               placeholder="Search for products, brands and more"
+              value={searchQuery}
+              onChange={handleSearchChange}
+              onKeyDown={handleSearchSubmit}
             />
           </div>
         </div>
 
         {/* Right nav */}
         <nav className="flex items-center gap-4 text-sm">
-          <button className="btn-ghost rounded-full text-sm px-3 py-1.5">
-            Login
-          </button>
+          {/* Auth area */}
+          {!user ? (
+            <>
+              <button
+                className="btn-ghost rounded-full text-sm px-3 py-1.5"
+                onClick={handleLoginClick}
+              >
+                Login
+              </button>
+              <button
+                className="hidden sm:inline-flex btn-ghost rounded-full text-sm px-3 py-1.5 border border-gray-300"
+                onClick={handleSignupClick}
+              >
+                Signup
+              </button>
+            </>
+          ) : (
+            <div className="flex items-center gap-2">
+              <span className="text-gray-700">
+                Hi,&nbsp;
+                <span className="font-semibold">
+                  {user.name?.split(" ")[0] || "User"}
+                </span>
+              </span>
+              <button
+                onClick={handleLogout}
+                className="btn-ghost rounded-full text-sm px-3 py-1.5"
+              >
+                Logout
+              </button>
+            </div>
+          )}
 
-          <NavLink to="/cart" className={linkClass}>
+          {/* Cart */}
+          <NavLink to="/cart" className="text-gray-700 hover:text-gray-900">
             <div className="relative flex items-center gap-1">
-              <span>🛒</span>
-              <span>Cart</span>
+              🛒 Cart
               {totalCount > 0 && (
-                <span className="absolute -top-2 -right-3 bg-fuchsia-500 text-white text-[10px] font-semibold rounded-full px-1.5 py-0.5 shadow-sm">
+                <span className="absolute -top-2 -right-3 bg-fuchsia-500 text-white text-[10px] px-1.5 py-0.5 rounded-full shadow-sm">
                   {totalCount}
                 </span>
               )}
             </div>
           </NavLink>
 
-          <NavLink to="/contact" className={linkClass}>
-            Contact&nbsp;Us
+          {/* Wishlist */}
+          <NavLink to="/wishlist" className="text-gray-700 hover:text-gray-900">
+            <div className="relative flex items-center gap-1">
+              💜 Wishlist
+              {wishlist.length > 0 && (
+                <span className="absolute -top-2 -right-4 bg-fuchsia-500 text-white text-[10px] px-1.5 py-0.5 rounded-full shadow-sm">
+                  {wishlist.length}
+                </span>
+              )}
+            </div>
           </NavLink>
         </nav>
       </div>

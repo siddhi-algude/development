@@ -8,7 +8,8 @@
     "image": "https://images.pexels.com/photos/6311652/pexels-photo-6311652.jpeg?auto=compress&cs=tinysrgb&w=600",
     "category": "Fashion",
     "rating": 4.5,
-    "ratingCount": 210
+    "ratingCount": 210,
+    "stock":23
   },
   {
     "id": 2,
@@ -18,7 +19,8 @@
     "image": "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=600",
     "category": "Fashion",
     "rating": 4.2,
-    "ratingCount": 145
+    "ratingCount": 145,
+    "stock":2
   },
   {
     "id": 3,
@@ -28,7 +30,8 @@
     "image": "https://images.pexels.com/photos/3394664/pexels-photo-3394664.jpeg?auto=compress&cs=tinysrgb&w=600",
     "category": "Electronics",
     "rating": 4.7,
-    "ratingCount": 320
+    "ratingCount": 320,
+    "stock":3
   },
   {
     "id": 4,
@@ -38,7 +41,8 @@
     "image": "https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=600",
     "category": "Electronics",
     "rating": 4.4,
-    "ratingCount": 540
+    "ratingCount": 540,
+    "stock":12
   },
   {
     "id": 5,
@@ -48,7 +52,8 @@
     "image": "https://images.pexels.com/photos/845434/pexels-photo-845434.jpeg?auto=compress&cs=tinysrgb&w=600",
     "category": "Electronics",
     "rating": 4.6,
-    "ratingCount": 190
+    "ratingCount": 190,
+    "stock":13
   },
   {
     "id": 6,
@@ -58,7 +63,8 @@
     "image": "https://images.pexels.com/photos/164745/pexels-photo-164745.jpeg?auto=compress&cs=tinysrgb&w=600",
     "category": "Electronics",
     "rating": 4.3,
-    "ratingCount": 260
+    "ratingCount": 260,
+    "stock":33
   },
   {
     "id": 7,
@@ -68,7 +74,8 @@
     "image": "https://images.pexels.com/photos/813691/pexels-photo-813691.jpeg?auto=compress&cs=tinysrgb&w=600",
     "category": "Home & Furniture",
     "rating": 4.1,
-    "ratingCount": 80
+    "ratingCount": 80,
+    "stock":80
   },
   {
     "id": 8,
@@ -78,7 +85,8 @@
     "image": "https://images.pexels.com/photos/5710142/pexels-photo-5710142.jpeg?auto=compress&cs=tinysrgb&w=600",
     "category": "Home & Furniture",
     "rating": 4.0,
-    "ratingCount": 65
+    "ratingCount": 65,
+    "stock":8
   },
   {
     "id": 9,
@@ -88,6 +96,7 @@
     "image": "https://images.pexels.com/photos/112474/pexels-photo-112474.jpeg?auto=compress&cs=tinysrgb&w=600",
     "category": "Home & Furniture",
     "rating": 4.5,
-    "ratingCount": 110
+    "ratingCount": 110,
+    "stock":93
   }
 ]
