@@ -117,7 +117,7 @@
 // }
 
 // export default ProductCard;
-
+import { AddToCartButton } from "@abcde123jk/swiftkart-addtocart";
 import { useCart } from "../context/CartContext";
 import { useWishlist } from "../context/WishlistContext";
 import { Link } from "react-router-dom";
@@ -190,7 +190,7 @@ function ProductCard({ product }) {
       </Link>
 
       {/* ADD TO CART BUTTON */}
-      <button
+      {/* <button
         onClick={(e) => {
           e.stopPropagation();
           if (!hasStock) return;
@@ -204,7 +204,15 @@ function ProductCard({ product }) {
         }`}
       >
         {hasStock ? "Add to Cart" : "Out of Stock"}
-      </button>
+      </button> */}
+      {/* ADD TO CART BUTTON (from NPM package) */}
+      <AddToCartButton
+        onAdd={() => addItem(product)}
+        disabled={!hasStock}
+        label={hasStock ? "Add to Cart" : "Out of Stock"}
+        className="mt-3 w-full"
+      />
+
     </div>
   );
 }

@@ -1,0 +1,14 @@
+{
+  "name": "@abcde123jk/swiftkart-addtocart",
+  "version": "1.0.1",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "type": "module",
+  "files": [
+    "src"
+  ],
+  "peerDependencies": {
+    "react": ">=18.0.0 <21.0.0",
+    "react-dom": ">=18.0.0 <21.0.0"
+  }
+}
