@@ -1,0 +1,67 @@
+{
+  "language": {
+    "en": "EN",
+    "hi": "HI",
+    "fr": "FR",
+    "ar": "AR"
+  },
+
+  "brand": {
+    "name": "Swift Kart"
+  },
+
+  "search": {
+    "placeholder": "Search for products, brands and more"
+  },
+
+  "auth": {
+    "login": "Login",
+    "signup": "Signup"
+  },
+
+  "nav": {
+    "cart": "Cart",
+    "wishlist": "Wishlist"
+  },
+
+  "categories": {
+    "fashion": "Fashion",
+    "mobiles": "Mobiles",
+    "electronics": "Electronics",
+    "home_furniture": "Home & Furniture",
+    "appliances": "Appliances",
+    "travel": "Travel",
+    "beauty_more": "Beauty & More"
+  },
+
+  "filters": {
+  "title": "Filters",
+  "category": "Category",
+  "all_categories": "All Categories",
+  "min_price": "Min Price",
+  "max_price": "Max Price",
+  "min_price_placeholder": "e.g. 20",
+  "max_price_placeholder": "e.g. 200",
+  "min_rating": "Min Rating",
+  "all_ratings": "All Ratings",
+  "rating_4_up": "4★ & Up",
+  "rating_3_up": "3★ & Up",
+  "rating_2_up": "2★ & Up",
+  "reset": "Reset filters"
+}
+,
+
+  "sections": {
+    "featured_products": "Featured Products",
+    "new_arrivals": "New Arrivals",
+    "trending_now": "Trending Now",
+    "no_items": "No items to show."
+  },
+
+  "product": {
+  "only_left": "Only {{count}} left",
+  "add_to_cart": "Add to Cart",
+  "out_of_stock": "Out of stock"
+}
+
+}

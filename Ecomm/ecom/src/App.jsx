@@ -110,6 +110,7 @@ import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./layouts/Layout";
 import Loader from "./components/Loader";
+import { useTranslation } from "react-i18next";
 
 const Home = lazy(() => import("./pages/Home"));
 const ProductDetails = lazy(() => import("./pages/ProductDetails"));
@@ -129,6 +130,7 @@ const Checkout = lazy(() => import("./pages/Checkout"));
 const OrderSuccess = lazy(() => import("./pages/OrderSuccess"));
 
 export default function App() {
+  const {t} =useTranslation()
   return (
     <Layout>
       <Suspense fallback={<Loader />}>

@@ -1,0 +1,68 @@
+{
+  "language": {
+    "en": "EN",
+    "hi": "HI",
+    "fr": "FR",
+    "ar": "AR"
+  },
+
+  "brand": {
+    "name": "سويفت كارت"
+  },
+
+  "search": {
+    "placeholder": "ابحث عن المنتجات والعلامات التجارية والمزيد"
+  },
+
+  "auth": {
+    "login": "تسجيل الدخول",
+    "signup": "إنشاء حساب"
+  },
+
+  "nav": {
+    "cart": "عربة التسوق",
+    "wishlist": "المفضلة"
+  },
+
+  "categories": {
+    "fashion": "الأزياء",
+    "mobiles": "الهواتف",
+    "electronics": "الإلكترونيات",
+    "home_furniture": "المنزل والأثاث",
+    "appliances": "الأجهزة",
+    "travel": "السفر",
+    "beauty_more": "الجمال والمزيد"
+  },
+
+  "filters": {
+  "title": "الفلاتر",
+  "category": "الفئة",
+  "all_categories": "جميع الفئات",
+  "min_price": "أقل سعر",
+  "max_price": "أعلى سعر",
+  "min_price_placeholder": "مثال: 20",
+  "max_price_placeholder": "مثال: 200",
+  "min_rating": "أقل تقييم",
+  "all_ratings": "جميع التقييمات",
+  "rating_4_up": "4★ فأعلى",
+  "rating_3_up": "3★ فأعلى",
+  "rating_2_up": "2★ فأعلى",
+  "reset": "إعادة تعيين الفلاتر"
+}
+,
+
+  "sections": {
+    "featured_products": "المنتجات المميزة",
+    "new_arrivals": "وصل حديثًا",
+    "trending_now": "الرائج الآن",
+    "no_items": "لا توجد عناصر للعرض."
+
+  },
+
+  "product": {
+  "only_left": "لم يتبق سوى {{count}}",
+  "add_to_cart": "أضف إلى السلة",
+  "out_of_stock": "غير متوفر"
+}
+
+}

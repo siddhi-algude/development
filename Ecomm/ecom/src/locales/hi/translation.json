@@ -1,0 +1,67 @@
+{
+  "language": {
+    "en": "EN",
+    "hi": "HI",
+    "fr": "FR",
+    "ar": "AR"
+  },
+
+  "brand": {
+    "name": "Swift Kart"
+  },
+
+  "search": {
+    "placeholder": "उत्पाद, ब्रांड और अन्य खोजें"
+  },
+
+  "auth": {
+    "login": "लॉगिन",
+    "signup": "साइन अप"
+  },
+
+  "nav": {
+    "cart": "कार्ट",
+    "wishlist": "विशलिस्ट"
+  },
+
+  "categories": {
+    "fashion": "फ़ैशन",
+    "mobiles": "मोबाइल",
+    "electronics": "इलेक्ट्रॉनिक्स",
+    "home_furniture": "होम और फर्नीचर",
+    "appliances": "उपकरण",
+    "travel": "ट्रैवल",
+    "beauty_more": "ब्यूटी और अधिक"
+  },
+
+  "filters": {
+  "title": "फ़िल्टर्स",
+  "category": "श्रेणी",
+  "all_categories": "सभी श्रेणियाँ",
+  "min_price": "न्यूनतम कीमत",
+  "max_price": "अधिकतम कीमत",
+  "min_price_placeholder": "जैसे 20",
+  "max_price_placeholder": "जैसे 200",
+  "min_rating": "न्यूनतम रेटिंग",
+  "all_ratings": "सभी रेटिंग्स",
+  "rating_4_up": "4★ और अधिक",
+  "rating_3_up": "3★ और अधिक",
+  "rating_2_up": "2★ और अधिक",
+  "reset": "फ़िल्टर रीसेट करें"
+}
+,
+
+  "sections": {
+    "featured_products": "फ़ीचर्ड प्रोडक्ट्स",
+    "new_arrivals": "नए आगमन",
+    "trending_now": "ट्रेंडिंग अभी",
+    "no_items": "दिखाने के लिए कोई आइटम नहीं है।"
+
+  },
+
+  "product": {
+  "only_left": "सिर्फ़ {{count}} बचे हैं",
+  "add_to_cart": "कार्ट में जोड़ें",
+  "out_of_stock": "स्टॉक समाप्त"
+}
+}

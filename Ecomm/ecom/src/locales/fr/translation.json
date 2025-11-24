@@ -1,0 +1,68 @@
+{
+  "language": {
+    "en": "EN",
+    "hi": "HI",
+    "fr": "FR",
+    "ar": "AR"
+  },
+
+  "brand": {
+    "name": "Swift Kart"
+  },
+
+  "search": {
+    "placeholder": "Recherchez des produits, des marques et plus"
+  },
+
+  "auth": {
+    "login": "Connexion",
+    "signup": "Inscription"
+  },
+
+  "nav": {
+    "cart": "Panier",
+    "wishlist": "Liste de souhaits"
+  },
+
+  "categories": {
+    "fashion": "Mode",
+    "mobiles": "Mobiles",
+    "electronics": "Électronique",
+    "home_furniture": "Maison & Meubles",
+    "appliances": "Appareils",
+    "travel": "Voyage",
+    "beauty_more": "Beauté & Plus"
+  },
+
+  "filters": {
+  "title": "Filtres",
+  "category": "Catégorie",
+  "all_categories": "Toutes les catégories",
+  "min_price": "Prix minimum",
+  "max_price": "Prix maximum",
+  "min_price_placeholder": "ex : 20",
+  "max_price_placeholder": "ex : 200",
+  "min_rating": "Note minimum",
+  "all_ratings": "Toutes les notes",
+  "rating_4_up": "4★ et plus",
+  "rating_3_up": "3★ et plus",
+  "rating_2_up": "2★ et plus",
+  "reset": "Réinitialiser les filtres"
+}
+,
+
+  "sections": {
+    "featured_products": "Produits en vedette",
+    "new_arrivals": "Nouveautés",
+    "trending_now": "Tendance",
+    "no_items": "Aucun article à afficher."
+
+  },
+
+  "product": {
+  "only_left": "Plus que {{count}} restants",
+  "add_to_cart": "Ajouter au panier",
+  "out_of_stock": "Rupture de stock"
+}
+
+}
