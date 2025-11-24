@@ -326,9 +326,14 @@
 
 import { useEffect, useState } from "react";
 import { getProducts } from "../services/api";
-import ProductCard from "../components/ProductCard";
-import Filters from "../components/Filters";
-import HorizontalCarousel from "../components/HorizontalCarousel";
+// import ProductCard from "../components/ProductCard";
+// import Filters from "../components/Filters";
+// import HorizontalCarousel from "../components/HorizontalCarousel";
+const ProductCard = lazy(() => import("../components/ProductCard"));
+const Filters = lazy(() => import("../components/Filters"));
+const HorizontalCarousel = lazy(() =>
+  import("../components/HorizontalCarousel")
+);
 
 // ⭐ Helmet
 import { Helmet } from "react-helmet-async";
