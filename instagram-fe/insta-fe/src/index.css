@@ -1,0 +1,158 @@
+/* ===========================
+   RESET / BASE
+   =========================== */
+@font-face {
+  font-family: "Billabong";
+  src: url("https://fonts.cdnfonts.com/s/15072/Billabong.woff") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+  color: #262626;
+}
+
+/* ===========================
+   FLEX HELPERS (override your JSX)
+   =========================== */
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.bg-slate-100 {
+  background-color: #fafafa !important;
+}
+
+/* ===========================
+   AUTH CONTAINERS
+   =========================== */
+.auth-container {
+  width: 100%;
+  max-width: 340px;
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.auth-title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Billabong', cursive;
+  margin-bottom: 24px;
+}
+
+/* ===========================
+   INPUTS
+   =========================== */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #dbdbdb;
+  background: #fafafa;
+}
+
+input:focus {
+  outline: none;
+  border-color: #a8a8a8;
+}
+
+/* ===========================
+   BUTTONS
+   =========================== */
+button {
+  cursor: pointer;
+}
+
+button.auth-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #0095f6;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+button.auth-btn:disabled {
+  background-color: #b2dffc;
+}
+
+/* ===========================
+   ERRORS
+   =========================== */
+.text-red-500 {
+  color: #ed4956 !important;
+}
+
+/* ===========================
+   FOOTER LINKS
+   =========================== */
+a {
+  text-decoration: none;
+  color: #0095f6;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.auth-footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.auth-footer span {
+  color: #262626;
+}
+
+/* ===========================
+   FEED HEADER (after login)
+   =========================== */
+header {
+  background: #fff;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+header h1 {
+  font-size: 24px;
+  font-family: 'Billabong', cursive;
+}
+
+/* ===========================
+   SMALL TEXT / UTILITIES
+   =========================== */
+.text-center {
+  text-align: center;
+}
+.text-sm {
+  font-size: 14px;
+}
+.text-xs {
+  font-size: 12px;
+}
